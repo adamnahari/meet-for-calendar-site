@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400&display=swap" rel="stylesheet">
+<title>Meet for Calendar</title>
+<meta name="description" content="Google Meet in Apple Calendar's Add Video Call menu, on the Mac.">
+<link rel="canonical" href="https://meet.ezra.help/">
+<style>
+  :root { --bg: #0a0b0f; --fg: #d9d6cf; --fg-dim: #8f8c86; --accent: #eba25a; --rule: rgba(217,214,207,.16); }
+  @media (prefers-color-scheme: light) { :root { --bg: #f6f4ef; --fg: #1d1c1a; --fg-dim: #5f5c56; --accent: #a8641f; --rule: rgba(29,28,26,.16); } }
+  html { background: var(--bg); color: var(--fg); }
+  body { margin: 0; padding: 48px 16px 80px; font: 300 17px/1.6 Geist, system-ui, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-weight: 400; font-size: 28px; margin: 0 0 4px; }
+  h2 { font-weight: 400; font-size: 19px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  .meta { color: var(--fg-dim); margin-bottom: 32px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  code { font-size: 15px; }
+  nav { margin-bottom: 40px; color: var(--fg-dim); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></nav>
+<h1>Meet for Calendar</h1>
+<p class="meta">A macOS app by Adam Nahari</p>
+
+<p>Meet for Calendar adds <strong>Google Meet</strong> to the <em>Add Video Call</em> menu of Apple Calendar on the Mac, one entry per Google account. Picking it attaches a fresh, unique <code>meet.google.com</code> link to the event, so the event shows a Join button and invitees receive the link.</p>
+
+<h2>How it works</h2>
+<p>A small companion app signs you in to Google once per account and keeps the authorization on your Mac. A Calendar extension then creates a new Google Meet meeting space through the Google Meet REST API each time you choose Google Meet for an event. There is no server; data travels only between your Mac and Google.</p>
+
+<h2>Your data</h2>
+<p>The <a href="/privacy/">privacy policy</a> says exactly what the app receives from Google, where it keeps it, and how to remove it. The <a href="/terms/">terms of service</a> are short.</p>
+
+<h2>Availability</h2>
+<p>The app is a personal tool and is not distributed publicly.</p>
+</main>
+</body>
+</html>

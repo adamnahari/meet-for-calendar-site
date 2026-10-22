@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400&display=swap" rel="stylesheet">
+<title>Meet for Calendar privacy policy</title>
+<meta name="description" content="What the Meet for Calendar macOS app does with your Google account data.">
+<link rel="canonical" href="https://meet.ezra.help/privacy/">
+<style>
+  :root { --bg: #0a0b0f; --fg: #d9d6cf; --fg-dim: #8f8c86; --accent: #eba25a; --rule: rgba(217,214,207,.16); }
+  @media (prefers-color-scheme: light) { :root { --bg: #f6f4ef; --fg: #1d1c1a; --fg-dim: #5f5c56; --accent: #a8641f; --rule: rgba(29,28,26,.16); } }
+  html { background: var(--bg); color: var(--fg); }
+  body { margin: 0; padding: 48px 16px 80px; font: 300 17px/1.6 Geist, system-ui, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-weight: 400; font-size: 28px; margin: 0 0 4px; }
+  h2 { font-weight: 400; font-size: 19px; margin: 32px 0 8px; }
+  p, li { margin: 0 0 12px; }
+  .meta { color: var(--fg-dim); margin-bottom: 32px; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+  code { font-size: 15px; }
+  nav { margin-bottom: 40px; color: var(--fg-dim); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="/">Meet for Calendar</a> · <a href="/terms/">Terms</a></nav>
+<h1>Privacy policy</h1>
+<p class="meta">Last updated 22 October 2026</p>
+
+<p>Meet for Calendar is a macOS app, made by Adam Nahari for personal use, that adds Google Meet to the <em>Add Video Call</em> menu of Apple Calendar. This page says what the app does with your Google account data.</p>
+
+<h2>What the app receives from Google</h2>
+<p>When you sign in with Google inside the app, Google gives the app a refresh token for your account and your account's email address. The app asks for three permissions: <code>meetings.space.created</code> (create Google Meet meeting spaces), <code>openid</code> and <code>email</code> (show which account is signed in). Nothing else is requested or received.</p>
+
+<h2>What the app does with it</h2>
+<p>The refresh token is used for one thing: when you choose Google Meet for an event in Apple Calendar, the app obtains a short-lived access token from Google and calls the Google Meet REST API to create a new meeting space, whose link Calendar attaches to the event. The email address is shown in the app so you can see which account is signed in.</p>
+
+<h2>Where the data lives</h2>
+<p>Everything is stored on your Mac, in files readable only by your user account, the app and its Calendar extension. The app has no server of its own. Data travels only between your Mac and Google. The app uses no analytics, shares data with no one, and sells nothing.</p>
+
+<h2>How to remove it</h2>
+<p>Click <em>Sign out</em> in the app: the file for that account is deleted and the authorization is revoked at Google. You can also revoke the app's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2>Google API Services</h2>
+<p>Meet for Calendar's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:ezra@ezra.help">ezra@ezra.help</a>.</p>
+</main>
+</body>
+</html>
